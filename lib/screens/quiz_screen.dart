@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vocab_list/widgets/quiz_config_wdiget.dart';
 
 import '../models/quiz_models.dart';
 import '../models/word_meaning.dart';
@@ -14,6 +13,7 @@ import '../providers/secrets_provider.dart';
 import '../utils/snackbar_messaging.dart';
 import '../widgets/loading.dart';
 import '../widgets/popup_menu_widget.dart';
+import '../widgets/quiz_config_wdiget.dart';
 import 'quiz_active_screen.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {

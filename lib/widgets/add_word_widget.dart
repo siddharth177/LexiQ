@@ -1,14 +1,14 @@
+import 'package:LexiQ/widgets/positioned_loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:vocab_list/providers/secrets_provider.dart';
-import 'package:vocab_list/services/word_details.dart';
-import 'package:vocab_list/services/speak_aloud.dart';
-import 'package:vocab_list/utils/colors_and_theme.dart';
-import 'package:vocab_list/utils/snackbar_messaging.dart';
-import 'package:vocab_list/widgets/positioned_loading_widget.dart';
 
 import '../models/word_meaning.dart';
+import '../providers/secrets_provider.dart';
+import '../services/speak_aloud.dart';
+import '../services/word_details.dart';
+import '../utils/colors_and_theme.dart';
 import '../utils/firebase.dart';
+import '../utils/snackbar_messaging.dart';
 
 class AddWordWidget extends ConsumerStatefulWidget {
   AddWordWidget(

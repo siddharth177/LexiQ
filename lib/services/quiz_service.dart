@@ -3,8 +3,8 @@ import 'dart:math';
 
 import 'package:http/http.dart' as http;
 
-import 'package:vocab_list/models/quiz_models.dart';
-import 'package:vocab_list/models/word_meaning.dart';
+import '../models/quiz_models.dart';
+import '../models/word_meaning.dart';
 
 List<QuizQuestion> generateQuestionsFromVocab(
     List<WordMeaning> vocabList, int count) {

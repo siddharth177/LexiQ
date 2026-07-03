@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vocab_list/models/word_meaning.dart';
-import 'package:vocab_list/utils/colors_and_theme.dart';
 
+import '../models/word_meaning.dart';
 import '../services/speak_aloud.dart';
+import '../utils/colors_and_theme.dart';
 
 class DisplayVocabListElement extends StatefulWidget {
   const DisplayVocabListElement({required this.wordMeaning, super.key});

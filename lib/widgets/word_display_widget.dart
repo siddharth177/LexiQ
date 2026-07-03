@@ -1,11 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vocab_list/utils/colors_and_theme.dart';
 
 import '../models/word_meaning.dart';
+import '../utils/colors_and_theme.dart';
 import '../utils/firebase.dart';
 import 'add_word_widget.dart';
 import 'word_expanded_display_widget.dart';

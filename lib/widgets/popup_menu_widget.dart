@@ -1,7 +1,7 @@
+import 'package:LexiQ/widgets/theme_popup_menu_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:vocab_list/screens/quiz_screen.dart';
-import 'package:vocab_list/widgets/theme_popup_menu_widget.dart';
 
+import '../screens/quiz_screen.dart';
 import '../utils/colors_and_theme.dart';
 import '../utils/firebase.dart';
 
