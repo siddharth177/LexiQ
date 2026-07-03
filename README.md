@@ -117,15 +117,6 @@ This project was built entirely from scratch as a self-initiated product — fro
 
 ---
 
-# Architecture Highlights
-
-- **Modular feature structure** — models, services, screens, widgets cleanly separated
-- **Secure API key management** — Groq API key stored in Firestore (not in source code); gitignored secrets file for local development
-- **Offline-resilient** — Firestore persistence layer handles intermittent connectivity
-- **Provider pattern** — theme, auth state, and API keys managed via Riverpod (`FutureProvider` / `StateProvider`)
-
----
-
 ### 🏁 Self-Initiated Impact
 
 LexiQ was designed and developed from scratch as an end-to-end product. It represents a synthesis of technical proficiency, product lifecycle management, and a user-centric approach to educational technology.
