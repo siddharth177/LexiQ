@@ -26,6 +26,10 @@
  - Look up word definitions, usages, and examples with ease.
  - Powered by the Llama model, ensuring accurate and contextually rich information retrieval.
 
+3. Quiz Yourself
+   - Revice with quiz strategy
+   - Generate Quiz using your vocab list or use AI to generate quiz with varied level of difficulty
+
 
 ## How to use the App
 ### **Effortlessly maintain your vocabulary list**
@@ -43,6 +47,18 @@
 ### **Load on eyes, no worries - use dark theme**
 ![image](https://github.com/user-attachments/assets/eb437a37-1101-4d71-a2a8-a832f45a8ca7) ![image](https://github.com/user-attachments/assets/bd13d805-6908-4107-b0d9-dbbb06fc34ef)
 #
+
+### **Quiz Mode**
+<img width="496" height="757" alt="image" src="https://github.com/user-attachments/assets/5e44bbe7-90e8-47a1-9214-04be342ec289" />
+
+### **Generate A Quiz**
+<img width="492" height="670" alt="image" src="https://github.com/user-attachments/assets/bf1eb985-c40c-4623-9f0c-a266c79d8be3" />
+
+### **Attempt The Quiz**
+<img width="495" height="667" alt="image" src="https://github.com/user-attachments/assets/174b5511-a4df-4471-8609-3f228d0edf4f" />
+
+### **Review Quiz Anytime**
+<img width="474" height="653" alt="image" src="https://github.com/user-attachments/assets/3362c666-9269-4a9e-beab-f472571d6f58" />
 
 
 ## Technology Stack
