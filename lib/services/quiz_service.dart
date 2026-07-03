@@ -35,7 +35,7 @@ List<QuizQuestion> generateQuestionsFromVocab(
 
 Future<List<QuizQuestion>> generateQuestionsFromAI(
     int count, int difficulty, String apiKey) async {
-  final url = Uri.parse('');
+  final url = Uri.parse('https://api.groq.com/openai/v1/chat/completions');
   final body = json.encode({
     "messages": [
       {
