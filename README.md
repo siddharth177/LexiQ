@@ -54,47 +54,54 @@ This project was built entirely from scratch as a self-initiated product — fro
 
 # Screenshots
 
-### Vocabulary List
+### Secured Login
+```html
+<img width="1119" height="2124" alt="Secured Login Screen" src="https://github.com/user-attachments/assets/c79089ec-eddb-4ed1-bf2c-dfebe8078d16" />
+```
 
-![Vocab List Light](...)
-![Vocab List](...)
+### Vocabulary List
+```html
+<img width="305" height="564" alt="Vocabulary Display Screen" src="https://github.com/user-attachments/assets/ebaaac65-e5e2-4b69-9746-c708b3865a97" />
+
+
+<img width="1142" height="2129" alt="Vocabulary Display Screen 2" src="https://github.com/user-attachments/assets/f91a9107-1b80-44d9-b791-a43ee47162e0" />
+```
+
 ![Vocab List Expanded](...)
+```html
+<img width="1140" height="2106" alt="Expanded Word Display Screen" src="https://github.com/user-attachments/assets/a9a43328-c6e3-4e9e-9ca1-f0571503e5c6" />
+```
 
 ### Word Detail (AI-Powered)
-
-![Word Detail](https://github.com/user-attachments/assets/5b235081-e68b-4dd4-96e4-fddc7d68f303)
-
-### Speak Aloud
-
-![Speak Aloud](...)
+```html
+<img width="1156" height="2141" alt="AI-Powered word search Screen" src="https://github.com/user-attachments/assets/894eb92e-bd33-4e5d-bf91-0934d09a828e" />
+```
 
 ### Dark Mode
-
-![Dark Mode](...)
-![Dark Mode 2](...)
+```html
+<img width="1143" height="2151" alt="E7318BE6-72E5-4AD2-869E-B201B7A7EB06_1_201_a" src="https://github.com/user-attachments/assets/f7136fe7-cdaa-486f-88df-f73804754f10" />
+```
 
 ### Quiz – Configure
 
 ```html
-<!-- TODO: Add updated screenshot of Configure Quiz screen (dark mode, with slider) -->
-<img width="492" height="670" alt="Configure Quiz" src="https://github.com/user-attachments/assets/bf1eb985-c40c-4623-9f0c-a266c79d8ba3" />
+<img width="1146" height="2123" alt="00BAEDDE-F409-4067-90DC-4143016172E5_1_201_a" src="https://github.com/user-attachments/assets/9b050a07-839b-45e6-8ab6-dea5ab31da88" />
+<img width="1108" height="2109" alt="00EB8397-FF1A-4E05-9BA7-BC8ADEE93EFF_1_201_a" src="https://github.com/user-attachments/assets/5f159daf-3e4f-48ca-a538-44c22e14c6b6" />
 ```
 
 ### Quiz – Active
 
 ```html
-<!-- TODO: Add updated screenshot of active quiz screen -->
-<img width="495" height="667" alt="Active Quiz" src="https://github.com/user-attachments/assets/174b5511-a1df-4671-8609-3f228d0edf4f" />
+<img width="301" height="572" alt="1BBC05CC-3851-419B-884E-026ADC151085_4_5005_c" src="https://github.com/user-attachments/assets/d138e17d-d757-49c2-b565-d9751ddd3a33" />
+
 ```
 
 ### Quiz – Review & History
 
 ```html
-<!-- TODO: Add updated screenshot of quiz history -->
-<img width="496" height="757" alt="Quiz History" src="https://github.com/user-attachments/assets/5e44bbe7-90e8-47a1-9214-04be342ec289" />
+<img width="1146" height="2123" alt="00BAEDDE-F409-4067-90DC-4143016172E5_1_201_a" src="https://github.com/user-attachments/assets/9b050a07-839b-45e6-8ab6-dea5ab31da88" />
+<img width="1127" height="2126" alt="AED30C68-F526-4804-820D-74BD78B9D1B4_1_201_a" src="https://github.com/user-attachments/assets/3bba7a19-9bb8-4c70-b8db-162b49ba9813" />
 
-<!-- TODO: Add updated screenshot of quiz review -->
-<img width="474" height="653" alt="Quiz Review" src="https://github.com/user-attachments/assets/3362c6d6-9269-4a9e-beab-f472571d6f58" />
 ```
 
 ---
