@@ -553,7 +553,10 @@ class _AddWordWidgetState extends ConsumerState<AddWordWidget> {
                         onPressed: _clearEntries,
                         style: ButtonStyle(
                           backgroundColor: WidgetStateProperty.all<Color>(
-                              kDarkQuaternaryColor),
+                              Theme.of(context).colorScheme.errorContainer),
+                          foregroundColor: WidgetStateProperty.all<Color>(
+                            Theme.of(context).colorScheme.onErrorContainer
+                          )
                           // minimumSize: WidgetStateProperty.all<Size>(Size(50,40)),
                         ),
                         child: Text(_clearButton),

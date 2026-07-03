@@ -94,7 +94,8 @@ class _WordsListScreenState extends State<WordsListScreen> {
                             _searchController.clear();
                           });
                         },
-                        icon: const Icon(Icons.clear)),
+                        icon: Icon(Icons.clear,
+                        color: Theme.of(context).colorScheme.onSurface,)),
                   ],
               ),
             ),

@@ -60,7 +60,8 @@ var kDarkThemeData = kLightThemeData.copyWith(
       backgroundColor: WidgetStateProperty.all<Color>(kDarkBlackShade2),
       textStyle: WidgetStateProperty.all(const TextStyle().copyWith(
           color: kDarkWhiteShade1
-      ))
+      )),
+    hintStyle: WidgetStateProperty.all(TextStyle(color: kDarkWhiteShade1))
   ),
   appBarTheme: const AppBarTheme().copyWith(
       backgroundColor: kDarkGreyShade1,
@@ -89,5 +90,7 @@ var kDarkThemeData = kLightThemeData.copyWith(
   ),
   snackBarTheme: const SnackBarThemeData().copyWith(
     backgroundColor: kDarkPrimaryColor,
+    actionTextColor: kDarkBlackShade1,
+    contentTextStyle: TextStyle(color: kDarkWhiteShade1)
   ),
 );
