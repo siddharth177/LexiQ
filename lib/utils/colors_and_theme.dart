@@ -32,7 +32,7 @@ var kSecondaryFontTheme = GoogleFonts.openSansTextTheme();
 var kTertiaryFontTheme = GoogleFonts.robotoMonoTextTheme();
 
 var kLightColorScheme = ColorScheme.fromSeed(seedColor: kLightPrimaryColor);
-var kDarkColorScheme = ColorScheme.fromSeed(seedColor: kDarkPrimaryColor);
+var kDarkColorScheme = ColorScheme.fromSeed(seedColor: kDarkPrimaryColor, brightness: Brightness.dark);
 
 
 var kLightThemeData = ThemeData().copyWith(
@@ -49,6 +49,8 @@ var kLightThemeData = ThemeData().copyWith(
   colorScheme: kLightColorScheme,
   brightness: Brightness.light,
 );
+
+var kDartTextTheme = GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme);
 
 var kDarkThemeData = kLightThemeData.copyWith(
   colorScheme: kDarkColorScheme,
@@ -67,7 +69,7 @@ var kDarkThemeData = kLightThemeData.copyWith(
   cardTheme: const CardTheme().copyWith(
     color: kDarkGreyShade2,
   ).data,
-  textTheme: kPrimaryFontTheme,
+  textTheme: kDartTextTheme,
   floatingActionButtonTheme: const FloatingActionButtonThemeData().copyWith(
       backgroundColor: kDarkBlackShade1,
       foregroundColor: kDarkWhiteShade1,
