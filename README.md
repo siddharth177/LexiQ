@@ -1,97 +1,163 @@
-# Vocab List <img src="https://github.com/siddharth177/vocab-list/blob/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="logo" height="30"/>
-### A comprehensive, all-in-one solution for managing your vocabulary while preparing for exams like GRE, TOEFL, or any language-learning journey. With this app, you can search, save, and review words, all in one place.
-### Try Out App on Web from : https://siddharth177.github.io/myVocabList/
+# 🚀 LexiQ – AI-Powered Vocabulary Builder & Quiz App
 
+> **Turn passive word-saving into active learning.** LexiQ helps students build a personal vocabulary database, get AI-generated word insights, and test themselves with adaptive quizzes — all in one cross-platform app.
 
-## Table of Contents
-1. [Functionalities](#functionalities)
-2. [How to Use App (Screenshots)](#how-to-use-the-app)
-   1. [Effortlessly maintain your vocabulary list](#effortlessly-maintain-your-vocabulary-list)
-   2. [Get right pronunciation with speak aloud](#get-right-prononciations-with-speak-aloud)
-   3. [Get in-depth details for every word you search](#get-in-depth-details-for-every-word-you-search)
-   4. [Use Dark Mode](#load-on-eyes-no-worries---use-dark-theme)
-3. [Tech Stack Used](#technology-stack)
-4. [Use this package](#how-to-use-the-package)
-5. [Want to contribute?](#contributing)
+> **Live Demo:** https://siddharth177.github.io/myVocabList/
 
+---
 
-## Functionalities
-1. Manage Your Vocabulary
- - Add words to your personalized vocabulary list.
- - Edit or delete words effortlessly.
- - Expand entries to view detailed information about each word.
- - Use the Speak Aloud feature to hear word pronunciations for better retention.
+# Why LexiQ?
 
-2. Search and Explore
- - Look up word definitions, usages, and examples with ease.
- - Powered by the Llama model, ensuring accurate and contextually rich information retrieval.
+Most students preparing for GRE, TOEFL, GMAT, or competitive exams encounter the same bottleneck: they passively highlight words but never revisit them.
 
-3. Quiz Yourself
-   - Revice with quiz strategy
-   - Generate Quiz using your vocab list or use AI to generate quiz with varied level of difficulty
+LexiQ closes that loop by combining:
 
+- **Intelligent word discovery**
+- **Personal knowledge management**
+- **AI-driven assessment**
 
-## How to use the App
-### **Effortlessly maintain your vocabulary list**
-![image](https://github.com/user-attachments/assets/3d2ef2b5-2c73-4d50-a6c3-036936417c22) ![image](https://github.com/user-attachments/assets/062a7004-11aa-4bf3-856b-0ecd945f5def) ![image](https://github.com/user-attachments/assets/a2689dee-3757-4acf-8257-862cb9d40ec5)
-#
+into a single, beautifully designed mobile application.
 
-### **Get right prononciations with speak aloud**
-![image](https://github.com/user-attachments/assets/bd16a1ed-2561-4c26-a366-ef040660a315)
-#
+This project was built entirely from scratch as a self-initiated product — from identifying the user problem, to designing the system architecture, to shipping a production-ready cross-platform application integrated with real AI inference APIs.
 
-### **Get in-depth details for every word you search:**
-![image](https://github.com/user-attachments/assets/5a235081-e68b-4dd4-96e4-fddc7a68f303)
-#
+---
 
-### **Load on eyes, no worries - use dark theme**
-![image](https://github.com/user-attachments/assets/eb437a37-1101-4d71-a2a8-a832f45a8ca7) ![image](https://github.com/user-attachments/assets/bd13d805-6908-4107-b0d9-dbbb06fc34ef)
-#
+# Key Features
 
-### **Quiz Mode**
-<img width="496" height="757" alt="image" src="https://github.com/user-attachments/assets/5e44bbe7-90e8-47a1-9214-04be342ec289" />
+### 📚 Smart Vocabulary Management
 
-### **Generate A Quiz**
-<img width="492" height="670" alt="image" src="https://github.com/user-attachments/assets/bf1eb985-c40c-4623-9f0c-a266c79d8be3" />
+- Add words to a cloud-synced personal dictionary
+- AI-generated definitions, word types, etymological roots, usage examples, and tense variations powered by **Llama 3.3-70B via Groq API**
+- Hear correct pronunciation with built-in **Text-to-Speech**
+- Swipe to edit or delete — gesture-native UX
 
-### **Attempt The Quiz**
-<img width="495" height="667" alt="image" src="https://github.com/user-attachments/assets/174b5511-a4df-4471-8609-3f228d0edf4f" />
+### 🧠 Adaptive AI Quiz Engine
 
-### **Review Quiz Anytime**
-<img width="474" height="653" alt="image" src="https://github.com/user-attachments/assets/3362c666-9269-4a9e-beab-f472571d6f58" />
+- Generate MCQ quizzes from your **own saved vocabulary** or let AI create entirely new word sets
+- 5-level difficulty dial (Basic → Advanced) for AI-generated quizzes
+- Configurable timer per question — builds real exam conditions
+- Post-quiz review with answer-by-answer breakdown
 
+### 📊 Quiz History & Progress Tracking
 
-## Technology Stack
-- Frontend: Flutter
-- Backend: Firebase
-- Machine Learning: Llama Model
+- Every quiz result stored to the cloud with score, source, and per-question breakdown
+- History cards with swipe-to-delete
+- Tap any past result to revisit full review
 
+### 🎨 Polished UX
 
-## How to use the package
-1. Clone the repository
+- Full light / dark mode with adaptive theming
+- Smooth Rive animations for loading states
+- Responsive design — works on mobile, tablet, and web
+
+---
+
+# Screenshots
+
+### Vocabulary List
+
+![Vocab List Light](...)
+![Vocab List](...)
+![Vocab List Expanded](...)
+
+### Word Detail (AI-Powered)
+
+![Word Detail](https://github.com/user-attachments/assets/5b235081-e68b-4dd4-96e4-fddc7d68f303)
+
+### Speak Aloud
+
+![Speak Aloud](...)
+
+### Dark Mode
+
+![Dark Mode](...)
+![Dark Mode 2](...)
+
+### Quiz – Configure
+
+```html
+<!-- TODO: Add updated screenshot of Configure Quiz screen (dark mode, with slider) -->
+<img width="492" height="670" alt="Configure Quiz" src="https://github.com/user-attachments/assets/bf1eb985-c40c-4623-9f0c-a266c79d8ba3" />
 ```
-git clone https://github.com/your-username/vocab-list.git  
+
+### Quiz – Active
+
+```html
+<!-- TODO: Add updated screenshot of active quiz screen -->
+<img width="495" height="667" alt="Active Quiz" src="https://github.com/user-attachments/assets/174b5511-a1df-4671-8609-3f228d0edf4f" />
 ```
 
-2. Navigate to the project directory.
-```
-cd vocab-list  
+### Quiz – Review & History
+
+```html
+<!-- TODO: Add updated screenshot of quiz history -->
+<img width="496" height="757" alt="Quiz History" src="https://github.com/user-attachments/assets/5e44bbe7-90e8-47a1-9214-04be342ec289" />
+
+<!-- TODO: Add updated screenshot of quiz review -->
+<img width="474" height="653" alt="Quiz Review" src="https://github.com/user-attachments/assets/3362c6d6-9269-4a9e-beab-f472571d6f58" />
 ```
 
-3. Install Dependencies
-```
-flutter pub get  
-```
-4.Run the application:
-```
+---
+
+# Technology Stack
+
+| Layer | Technology / Role |
+|------|--------------------|
+| Frontend | Flutter (Dart) — Cross-platform UI (iOS, Android, Web) |
+| State Management | Riverpod — Reactive, testable app state |
+| Backend | Firebase Auth, Firestore, Authentication, Real-time cloud sync |
+| AI Inference | Groq API (Llama 3.3-70B) — Word definitions, quiz generation |
+| Animations | Rive — Lightweight vector animations |
+| TTS | flutter_tts — Pronunciation playback |
+
+---
+
+# Architecture Highlights
+
+- **Modular feature structure** — models, services, screens, widgets cleanly separated
+- **Secure API key management** — Groq API key stored in Firestore (not in source code); gitignored secrets file for local development
+- **Offline-resilient** — Firestore persistence layer handles intermittent connectivity
+- **Provider pattern** — theme, auth state, and API keys managed via Riverpod (`FutureProvider` / `StateProvider`)
+
+---
+
+# Running Locally
+
+```bash
+# 1. Clone
+
+git clone https://github.com/siddharth177/vocab-list.git
+
+cd vocab-list
+
+# 2. Install dependencies
+
+flutter pub get
+
+# 3. Add your secrets (gitignored)
+
+Create lib/utils/secrets.dart:
+
+const String kGroqApiKey = 'your_groq_api_key';
+
+# 4. Run
+
 flutter run
 ```
-#
 
-## Contributing
-Contributions are welcomed! To contribute:
-1.	Fork the repository.
-2.	Create a new branch for your feature/bug fix.
-3.	Commit your changes and create a pull request.
+> Firebase is pre-configured via `google-services.json` / `GoogleService-Info.plist`.
 
+> To connect your own project, replace these files and update `firebase_options.dart`.
 
+---
+
+# Contributing
+
+Pull requests are welcome.
+
+For significant changes, please open an issue first to discuss what you'd like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add your feature'`)
+4. Push and open a Pull Request

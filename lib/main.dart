@@ -40,6 +40,7 @@ class _MyAppState extends ConsumerState<MyApp> {
     final themeMode = ref.watch(themeModeProvider);
 
     return MaterialApp(
+      title: 'LexiQ',
       theme: kLightThemeData,
       darkTheme: kDarkThemeData,
       themeMode: themeMode,
