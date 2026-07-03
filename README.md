@@ -126,6 +126,12 @@ This project was built entirely from scratch as a self-initiated product — fro
 
 ---
 
+### 🏁 Self-Initiated Impact
+
+LexiQ was designed and developed from scratch as an end-to-end product. It represents a synthesis of technical proficiency, product lifecycle management, and a user-centric approach to educational technology.
+
+---
+
 # Running Locally
 
 ```bash
