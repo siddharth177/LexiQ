@@ -50,6 +50,12 @@ This project was built entirely from scratch as a self-initiated product — fro
 - Smooth Rive animations for loading states
 - Responsive design — works on mobile, tablet, and web
 
+### 🚀 Technical Leadership & Architecture
+ 
+- State Management: Implemented Riverpod for a scalable, decoupled, and testable architecture.
+- Cloud Infrastructure: Leveraged Firebase Firestore for real-time synchronization and offline-first persistence.
+- Secure API Strategy: Dynamic loading of Groq AI keys via Firestore-managed secrets, ensuring no sensitive data is exposed in version control.
+- LLM Integration: Orchestrated prompt engineering for Llama-3.3-70B via Groq API to ensure consistent JSON-formatted outputs for the app's services.
 ---
 
 # Screenshots
