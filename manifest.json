@@ -1,6 +1,6 @@
 {
-    "name": "vocab_list",
-    "short_name": "vocab_list",
+    "name": "LexiQ",
+    "short_name": "LexiQ",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
