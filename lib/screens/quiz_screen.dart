@@ -163,7 +163,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             ),
         ],
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: Padding(
         padding: const EdgeInsets.all(4.0),
         child: FloatingActionButton(
