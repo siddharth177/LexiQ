@@ -94,7 +94,7 @@ This project was built entirely from scratch as a self-initiated product — fro
 
 ### Quiz – Active
 
-<img width="1146" height="572" alt="1BBC05CC-3851-419B-884E-026ADC151085_4_5005_c" src="https://github.com/user-attachments/assets/d138e17d-d757-49c2-b565-d9751ddd3a33" />
+<img width="1146" height="2123" alt="1BBC05CC-3851-419B-884E-026ADC151085_4_5005_c" src="https://github.com/user-attachments/assets/d138e17d-d757-49c2-b565-d9751ddd3a33" />
 
 
 ### Quiz – Review & History
