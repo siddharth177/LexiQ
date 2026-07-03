@@ -2,7 +2,7 @@
 
 > **Turn passive word-saving into active learning.** LexiQ helps students build a personal vocabulary database, get AI-generated word insights, and test themselves with adaptive quizzes — all in one cross-platform app.
 
-> **Live Demo:** https://siddharth177.github.io/myVocabList/
+> **Live Demo:** https://siddharth177.github.io/LexiQ/
 
 ---
 
@@ -126,7 +126,7 @@ This project was built entirely from scratch as a self-initiated product — fro
 ```bash
 # 1. Clone
 
-git clone https://github.com/siddharth177/vocab-list.git
+git clone https://github.com/siddharth177/LexiQ.git
 
 cd vocab-list
 
