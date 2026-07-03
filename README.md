@@ -66,8 +66,7 @@ This project was built entirely from scratch as a self-initiated product — fro
 <img width="1142" height="2129" alt="Vocabulary Display Screen 2" src="https://github.com/user-attachments/assets/f91a9107-1b80-44d9-b791-a43ee47162e0" />
 
 
-![Vocab List Expanded](...)
-
+### Expanded Word Display
 <img width="1140" height="2106" alt="Expanded Word Display Screen" src="https://github.com/user-attachments/assets/a9a43328-c6e3-4e9e-9ca1-f0571503e5c6" />
 
 
