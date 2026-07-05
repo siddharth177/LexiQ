@@ -56,6 +56,12 @@ This project was built entirely from scratch as a self-initiated product — fro
 - Cloud Infrastructure: Leveraged Firebase Firestore for real-time synchronization and offline-first persistence.
 - Secure API Strategy: Dynamic loading of Groq AI keys via Firestore-managed secrets, ensuring no sensitive data is exposed in version control.
 - LLM Integration: Orchestrated prompt engineering for Llama-3.3-70B via Groq API to ensure consistent JSON-formatted outputs for the app's services.
+
+### 🏁 Self-Initiated Impact
+
+LexiQ was designed and developed from scratch as an end-to-end product. It represents a synthesis of technical proficiency, product lifecycle management, and a user-centric approach to educational technology.
+
+
 ---
 
 # Screenshots
@@ -114,12 +120,6 @@ This project was built entirely from scratch as a self-initiated product — fro
 | AI Inference | Groq API (Llama 3.3-70B) — Word definitions, quiz generation |
 | Animations | Rive — Lightweight vector animations |
 | TTS | flutter_tts — Pronunciation playback |
-
----
-
-### 🏁 Self-Initiated Impact
-
-LexiQ was designed and developed from scratch as an end-to-end product. It represents a synthesis of technical proficiency, product lifecycle management, and a user-centric approach to educational technology.
 
 ---
 
