@@ -1,3 +1,4 @@
+import 'package:LexiQ/widgets/add_word_widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -53,22 +54,47 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     });
   }
 
-  Future<void> _startQuiz(QuizConfig config, List<WordMeaning> vocabList) async {
+  Future<void> _startQuiz(
+      QuizConfig config, List<WordMeaning> vocabList) async {
     setState(() => _isGenerating = true);
     try {
       final List<QuizQuestion> questions;
       if (config.source == QuizSource.vocabList) {
         questions = generateQuestionsFromVocab(vocabList, config.wordCount);
       } else {
+        final uid = firebaseAuthInstance.currentUser?.uid;
+        final excludeWords = <String>{};
+        if (uid != null) {
+          final past = await firestoreInstance
+              .collection('users')
+              .doc(uid)
+              .collection('quizResults')
+              .orderBy('date', descending: true)
+              .limit(20)
+              .get();
+
+          for (final doc in past.docs) {
+            final result = QuizResult.fromFirestore(doc, null);
+            if (result.source == QuizSource.ai) {
+              for (final q in result.questions) {
+                if (q.isCorrect) excludeWords.add(q.word.toLowerCase());
+              }
+            }
+          }
+        }
         final apiKey = await ref.read(groqApiKeyProvider.future);
-        questions = await generateQuestionsFromAI(config.wordCount, config.difficulty, apiKey);
+        questions = await generateQuestionsFromAI(
+            config.wordCount, config.difficulty, apiKey,
+            excludeWords: excludeWords.toList());
       }
       if (!mounted) return;
       await Navigator.of(context).push(MaterialPageRoute(
         builder: (_) => QuizActiveScreen(questions: questions, config: config),
       ));
     } catch (e) {
-      if (mounted) clearAndDisplaySnackbar(context, e.toString().replaceFirst('Exception: ', ''));
+      if (mounted)
+        clearAndDisplaySnackbar(
+            context, e.toString().replaceFirst('Exception: ', ''));
     } finally {
       if (mounted) setState(() => _isGenerating = false);
     }
@@ -121,12 +147,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                       const SizedBox(height: 16),
                       Text(
                         'No quizzes yet',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              color: Theme.of(context)
-                                  .colorScheme
-                                  .onSurface
-                                  .withOpacity(0.45),
-                            ),
+                        style:
+                            Theme.of(context).textTheme.titleMedium?.copyWith(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onSurface
+                                      .withOpacity(0.45),
+                                ),
                       ),
                       const SizedBox(height: 6),
                       Text(
@@ -196,8 +223,11 @@ class _QuizResultCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pct = (result.score * 100).round();
-    final scoreColor =
-        pct >= 70 ? Colors.green : pct >= 40 ? Colors.orange : Colors.red;
+    final scoreColor = pct >= 70
+        ? Colors.green
+        : pct >= 40
+            ? Colors.orange
+            : Colors.red;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final d = result.date;
     final dateStr =
@@ -258,9 +288,9 @@ class _QuizResultCard extends StatelessWidget {
                       Text(
                         '${result.correctAnswers} / ${result.totalQuestions} correct',
                         style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16,
-                          color: isDark ? kDarkWhiteShade1 : null),
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                            color: isDark ? kDarkWhiteShade1 : null),
                       ),
                       const SizedBox(height: 4),
                       Row(
@@ -304,8 +334,10 @@ class _QuizResultCard extends StatelessWidget {
                 ),
                 const SizedBox(width: 8),
                 Icon(Icons.chevron_right,
-                    color:
-                        Theme.of(context).colorScheme.onSurface.withOpacity(0.35)),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .onSurface
+                        .withOpacity(0.35)),
               ],
             ),
           ),
@@ -316,8 +348,11 @@ class _QuizResultCard extends StatelessWidget {
 
   void _showReview(BuildContext context) {
     final pct = (result.score * 100).round();
-    final scoreColor =
-        pct >= 70 ? Colors.green : pct >= 40 ? Colors.orange : Colors.red;
+    final scoreColor = pct >= 70
+        ? Colors.green
+        : pct >= 40
+            ? Colors.orange
+            : Colors.red;
 
     showDialog(
       context: context,
@@ -398,6 +433,26 @@ class _QuizResultCard extends StatelessWidget {
                           ],
                         ),
                       ),
+                      IconButton(
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                          color: Theme.of(ctx).colorScheme.primary,
+                          visualDensity: VisualDensity.compact,
+                          tooltip: 'Add to Vocab List',
+                          onPressed: () => showModalBottomSheet(
+                              context: ctx,
+                              isScrollControlled: true,
+                              backgroundColor: Colors.transparent,
+                              builder: (_) => AddWordWidget(
+                                  word: q.word,
+                                  root: '',
+                                  phonetic: '',
+                                  wordClass: WordClass.none,
+                                  examples: [],
+                                  usages: [],
+                                  definition: q.correctAnswer,
+                                  isEdit: false)),
+                          icon: const Icon(Icons.add_circle_outline, size: 20)),
                     ],
                   ),
                 ),

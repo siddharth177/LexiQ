@@ -34,20 +34,22 @@ List<QuizQuestion> generateQuestionsFromVocab(
 }
 
 Future<List<QuizQuestion>> generateQuestionsFromAI(
-    int count, int difficulty, String apiKey) async {
+    int count, int difficulty, String apiKey, {List<String> excludeWords = const[]}) async {
   final url = Uri.parse('https://api.groq.com/openai/v1/chat/completions');
+  final seed = Random().nextInt(999999);
+  final excludeNote = excludeWords.isNotEmpty ? 'Do NOT use any of these already-mastered words: ${excludeWords.take(60).join(', ')}.' : '';
   final body = json.encode({
     "messages": [
       {
         "role": "system",
         "content":
-            "Generate exactly $count English vocabulary MCQ questions at difficult $difficulty/5 (1=basic everyday words, 5=advanced academic and literary. Return ONLY JSON: {\"questions\":[{\"word\":\"word\",\"definition\":\"correct brief definition\",\"wrong1\":\"plausible wrong definition\",\"wrong2\":\"plausible wrong definition\",\"wrong3\":\"plausible wrong definition\"}]}}"
+            "Generate exactly $count English vocabulary MCQ questions at difficult $difficulty/5 (1=basic everyday words, 5=advanced academic and literary. Use a wide variety of words and avoid repetition. $excludeNote Return ONLY JSON: {\"questions\":[{\"word\":\"word\",\"definition\":\"correct brief definition\",\"wrong1\":\"plausible wrong definition\",\"wrong2\":\"plausible wrong definition\",\"wrong3\":\"plausible wrong definition\"}]}}"
       },
-      {"role": "user", "content": "Generate now."}
+      {"role": "user", "content": "Generate now. Variation Seed: $seed"}
     ],
     "model": "llama-3.3-70b-versatile",
-    "temperature": 0.2,
-    "max_tokens": 1024,
+    "temperature": 0.9,
+    "max_tokens": 2048,
     "top_p": 1,
     "stream": false,
     "response_format": {"type": "json_object"},
