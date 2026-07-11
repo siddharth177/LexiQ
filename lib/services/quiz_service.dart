@@ -8,7 +8,7 @@ import '../models/word_meaning.dart';
 
 List<QuizQuestion> generateQuestionsFromVocab(
     List<WordMeaning> vocabList, int count) {
-  final usable = vocabList.where((w) => w.definition.isEmpty).toList();
+  final usable = vocabList.where((w) => w.definition.isNotEmpty).toList();
   if (usable.length < 4) {
     throw Exception(
         'You need at least 4 words with definitions to generate a quiz from you vocab list.');
