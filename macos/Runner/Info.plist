@@ -15,7 +15,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>LexiQ</string>
 	<key>CFBundlePackageType</key>
-	<string>LexiQ</string>
+	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleVersion</key>
